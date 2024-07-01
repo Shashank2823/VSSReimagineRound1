@@ -24,7 +24,7 @@ const End = () => {
         initial={{ opacity: 0, x: 100, scale: 0 }} // Start off-screen to the right and hidden
         whileInView={{ opacity: 1, x: 0, scale: 0.9 }} // Move to center and scale up
         transition={{ ease:'easeInOut', duration: 1.5 }} // Define the transition properties
-        className='videodiv w-full sm:h-screen top-[-1000px]'
+        className='videodiv w-full sm:h-screen top-[-1000%]'
       >
         <video className='w-full h-full object-cover' autoPlay muted loop src={video}></video>
       </motion.div>
