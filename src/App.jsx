@@ -13,9 +13,14 @@ import './index.css';
 
 function App() {
   const [animationComplete, setAnimationComplete] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const controls = useAnimation();
 
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
     // GSAP animations
     const tl = gsap.timeline({
       onComplete: () => {
@@ -153,11 +158,15 @@ function App() {
   </motion.div>
  
 )}
-   
-   <div className='w-full h-auto absolute bottom-[-750%] '>
+    {isMobile && (
+          <div className="w-full h-auto absolute bottom-[-530%]">
+            <Marquee />
+          </div>
+    )}
+   <div className='w-full h-auto absolute md:bottom-[-750%] bottom-[-650%]'>
      <End/>
     </div> 
-    <div className='w-full h-auto absolute bottom-[-800%] '>
+    <div className='w-full h-auto absolute md:bottom-[-800%] bottom-[-710%] '>
       <Footer/> 
     </div> 
 </div>

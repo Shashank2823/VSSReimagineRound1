@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: gillii;
+  src: url(assets/Gilroy-Medium.otf);
+}
+@font-face {
+  font-family:assi ;
+  src: url(assets/Aeonik-Regular.ttf);
+}
+@font-face {
+  font-family:helli ;
+  src: url(assets/HelveticaNowText-Regular.ttf);
+}
 
 html{
   font-size: max(100vw / 1920*10);
@@ -47,7 +59,7 @@ nav div{
 nav div a{
   text-decoration: none;
   color: #bbb4b4;
-  font-family: 'gilroy';
+  font-family: 'gillii';
 
 }
 
@@ -62,7 +74,7 @@ nav div a{
 
 .fheader .h1{
   position: relative;
-  font-family: 'gilroy';
+  font-family: 'gillii';
   font-size: 30vw;
   color: #a19898;
   line-height: 1.125;
@@ -94,7 +106,7 @@ nav div a{
   color: #181818;
   padding: 0.2em 0.4em;
   font-size: 9vw;
-  font-family: 'gilroy';
+  font-family: 'gillii';
 }
 
 
@@ -139,6 +151,7 @@ html.lenis{
   width: 100%;
   height: 100%;
 }
+
 
 .hero_wrapper{
  width: inherit;
@@ -276,15 +289,18 @@ p,span{
 
 }
 
-.header_item{
+.header_items{
   display: flex;
   align-items: center;
   gap: 8rem;
 
 }
+.header_items span{
+  font-family: gillii;
+}
 
-.header_item::before,
-.header_item::after{
+.header_items::before,
+.header_items::after{
      content: "";
      width: 1rem;
      height: 1rem;
@@ -313,7 +329,15 @@ p,span{
   justify-content: space-between;
   width: 100%;
 }
-
+.section_info span, p{
+  font-family:helli ;
+}
+.lastli{
+  font-family: gillii;
+}
+.lastli span{
+  font-size: small;
+}
 .section_info_col:nth-child(1){
      display: inline-block;
      gap: 8rem;
@@ -357,6 +381,7 @@ p,span{
   font-size: 10rem;
   color: #ee4618;
   text-transform: uppercase;
+  font-family: assi;
 }
 
 .section_big{
@@ -372,7 +397,9 @@ p,span{
   color: rgb(250, 56, 2);
   opacity: 0.2;
 }
-
+.spot{
+  font-family: gillii;
+}
 .para{
   position: absolute;
   height: 50vh;
@@ -386,6 +413,7 @@ p,span{
   font-size: 15em;
   font-weight: 800;
   color: #bbb4b4;
+  font-family: helli;
 }
 
 .para p{
@@ -393,8 +421,12 @@ p,span{
   font-weight: 100;
   font-size: 2em;
   margin-top: 8vh;
+  font-family: assi;
 }
 
+.foss{
+  font-family: assi;
+}
 
  /* Sliderrr */
 

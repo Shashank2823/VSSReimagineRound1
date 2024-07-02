@@ -30,7 +30,7 @@ const Images = () => {
       initial={{y:0,opacity:0}} 
       whileInView={{y:-100,opacity:1}}  
       transition={{ ease: 'easeInOut', duration: 1 }}
-      className='text-[5em] sm:text-[2em] ml-6 text-gray-200 '>Spotlight</motion.span>
+      className='spot text-[5em] sm:text-[2em] ml-6 text-gray-200 '>Spotlight</motion.span>
     </h1>
 
     <motion.div
@@ -46,17 +46,17 @@ const Images = () => {
         alt="Model in Fossil"
       />
       <div className='h-[14%] w-[100%] flex justify-around gap-10 '>
-        <h5 className='text-slate-300 text-[10em] sm:text-[6rem]'>Kimiko Series 9</h5>
-        <h2 className='text-white text-[10em] sm:text-[6rem]'>$523</h2>
+        <h5 className='spot text-slate-300 text-[10em] sm:text-[6rem]'>Kimiko Series 9</h5>
+        <h2 className='spot text-white text-[10em] sm:text-[6rem]'>$523</h2>
       </div>
     </motion.div>
 
     <motion.div
       layout
-      initial={{ x: -500, opacity: 0 }}
+      initial={isLargeScreen ? { x: -500, opacity: 0 } : { opacity: 1 }}
       whileInView={{ x: 0, opacity: 1, }}
       transition={{ ease: 'easeInOut', duration: 1 }}
-      className="imagecont absolute left-[8%] top-[34%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
+      className="imagecont absolute left-[8%] top-[70%] sm:top-[34%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
     >
       <img
         className='h-[86%] w-[100%] object-contain'
@@ -64,8 +64,8 @@ const Images = () => {
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex justify-around gap-10'>
-        <h5 className='text-slate-300 text-[10em] sm:text-[6rem]'>Shifuu Series 11</h5>
-        <h2 className='text-white text-[10em] sm:text-[6rem]'>$523</h2>
+        <h5 className='spot text-slate-300 text-[10em] sm:text-[6rem]'>Shifuu Series 11</h5>
+        <h2 className='spot text-white text-[10em] sm:text-[6rem]'>$523</h2>
       </div>
     </motion.div>
 
@@ -73,10 +73,10 @@ const Images = () => {
 
      <motion.div
           layout
-          initial={{x:500, opacity:0}}
+          initial={isLargeScreen ? { x: 500, opacity: 0 } : { opacity: 1 }}
           whileInView={{x:0, opacity:1}}
           transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[53%] top-[115%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
+      className="imagecont absolute left-[8%] top-[470%] sm:left-[53%] sm:top-[115%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
       
     >
       <img
@@ -85,8 +85,8 @@ const Images = () => {
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex justify-around gap-10'> 
-          <h5 className='text-slate-300 text-[6rem]  '>Homelander IV</h5>
-          <h2 className='text-white text-[6rem]  '>$1523</h2>
+          <h5 className='spot text-slate-300 text-[10em] sm:text-[6rem]  '>Homelander IV</h5>
+          <h2 className='spot text-white text-[10em] sm:text-[6rem]  '>$1523</h2>
       </div>
     </motion.div>
 
@@ -95,7 +95,7 @@ const Images = () => {
           initial={isLargeScreen ? { x: -500, opacity: 0 } : { opacity: 1 }}
           whileInView={{x:0, opacity:1}}
           transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[8%] top-[64%] sm:top-[115%] my-auto sm:w-[70em] w-[160em] h-[130em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
+      className="imagecont absolute left-[8%] top-[120%] sm:top-[115%] my-auto sm:w-[70em] w-[160em] h-[130em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
       
     >
       <img
@@ -104,18 +104,18 @@ const Images = () => {
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex sm:flex-row justify-around gap-10'> 
-          <h5 className='text-slate-300 text-[10em] sm:text-[6rem]  '>Tombraider</h5>
-          <h2 className='text-white text-[10em] sm:text-[6rem]  '>$1523</h2>
+          <h5 className='spot text-slate-300 text-[10em] sm:text-[6rem]  '>Tombraider</h5>
+          <h2 className='spot text-white text-[10em] sm:text-[6rem]  '>$1523</h2>
       </div>
     </motion.div>
 
 
     <motion.div
      layout
-     initial={{x:-500, opacity:0}}
+     initial={isLargeScreen ? { x: -500, opacity: 0 } : { opacity: 1 }}
      whileInView={{x:0, opacity:1}}
      transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[8%] top-[200%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
+      className="imagecont absolute left-[8%] top-[170%] sm:top-[200%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
       
     >
       <img
@@ -124,17 +124,17 @@ const Images = () => {
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex justify-around gap-10'> 
-          <h5 className='text-slate-300 text-[6rem]  '>Compound X</h5>
-          <h2 className='text-white text-[6rem]  '>$323</h2>
+          <h5 className='text-slate-300 text-[10em] sm:text-[6rem]  '>Compound X</h5>
+          <h2 className='text-white text-[10em] sm:text-[6rem]  '>$323</h2>
       </div>
     </motion.div>
 
     <motion.div
      layout
-     initial={{x:500, opacity:0}}
+     initial={isLargeScreen ? { x: 500, opacity: 0 } : { opacity: 1 }}
      whileInView={{x:0, opacity:1}}
      transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[53%] top-[200%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
+      className="imagecont absolute left-[8%] top-[220%] sm:left-[53%] sm:top-[200%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
       
     >
       <img
@@ -143,8 +143,8 @@ const Images = () => {
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex justify-around gap-10'> 
-          <h5 className='text-slate-300 text-[6rem]  '>Xray</h5>
-          <h2 className='text-white text-[6rem]  '>$323</h2>
+          <h5 className='spot text-slate-300 text-[10em] sm:text-[6rem]  '>Xray</h5>
+          <h2 className='spot text-white text-[10em] sm:text-[6rem]  '>$323</h2>
       </div>
     </motion.div>
    
@@ -154,7 +154,7 @@ const Images = () => {
      whileHover={{zoom:1}}
      whileInView={{x:0, opacity:1}}
      transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[8%] top-[108%] sm:top-[285%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300 "
+      className="imagecont absolute left-[8%] top-[270%] sm:top-[285%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300 "
      
     >
       <img
@@ -163,18 +163,18 @@ const Images = () => {
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex sm:flex-row justify-around gap-10'> 
-          <h5 className='text-slate-300 text-[10em] sm:text-[6rem]  '>Bentis</h5>
-          <h2 className='text-white text-[10em] sm:text-[6rem]  '>$983</h2>
+          <h5 className='spot text-slate-300 text-[10em] sm:text-[6rem]  '>Bentis</h5>
+          <h2 className='spot text-white text-[10em] sm:text-[6rem]  '>$983</h2>
       </div>
     </motion.div>
 
     <motion.div
      layout
-     initial={{x:500, opacity:0}}
+     initial={isLargeScreen ? { x: 500, opacity: 0 } : { opacity: 1 }}
      whileHover={{zoom:1}}
      whileInView={{x:0, opacity:1}}
      transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[53%] top-[285%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300 "
+      className="imagecont absolute left-[8%] top-[320%] sm:left-[53%] sm:top-[285%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
      
     >
       <img
@@ -183,8 +183,8 @@ const Images = () => {
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex justify-around gap-10'> 
-          <h5 className='text-slate-300 text-[6rem]  '>Malta</h5>
-          <h2 className='text-white text-[6rem]  '>$983</h2>
+          <h5 className='spot text-slate-300 text-[10em] sm:text-[6rem]  '>Malta</h5>
+          <h2 className='spot text-white text-[10em] sm:text-[6rem]  '>$983</h2>
       </div>
     </motion.div>
 
@@ -194,7 +194,7 @@ const Images = () => {
 
           whileInView={{x:0, opacity:1}}
           transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[8%] top-[152%] sm:left-[53%] sm:top-[370%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300 "
+      className="imagecont absolute left-[8%] top-[370%] sm:left-[53%] sm:top-[370%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300 "
      
     >
       <img
@@ -203,8 +203,8 @@ const Images = () => {
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex justify-around gap-10'> 
-          <h5 className='text-slate-300 text-[10em] sm:text-[6rem]  '>Tate II</h5>
-          <h2 className='text-white text-[10em] sm:text-[6rem]  '>$2523</h2>
+          <h5 className='spot text-slate-300 text-[10em] sm:text-[6rem]  '>Tate II</h5>
+          <h2 className='spot text-white text-[10em] sm:text-[6rem]  '>$2523</h2>
       </div>
     </motion.div> 
 
@@ -215,7 +215,7 @@ const Images = () => {
           initial={isLargeScreen ? { x: -500, opacity: 0 } : { opacity: 1 }}
           whileInView={{x:0, opacity:1}}
           transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[8%] top-[196%] sm:top-[370%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
+      className="imagecont absolute left-[8%] top-[420%] sm:top-[370%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
      
     >
       <img
@@ -224,8 +224,8 @@ const Images = () => {
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex justify-around gap-10'> 
-          <h5 className='text-slate-300 text-[10em] sm:text-[6rem]  '>Flash III</h5>
-          <h2 className='text-white text-[10em] sm:text-[6rem]  '>$2203</h2>
+          <h5 className='spot text-slate-300 text-[10em] sm:text-[6rem]  '>Flash III</h5>
+          <h2 className='spot text-white text-[10em] sm:text-[6rem]  '>$2203</h2>
       </div>
     </motion.div> 
 

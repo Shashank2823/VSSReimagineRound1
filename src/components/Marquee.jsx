@@ -8,7 +8,7 @@ function Marquee() {
               initial={{x: "0"}} 
               animate={{x: "-100%",}} 
               transition={{ease:"linear", repeat: Infinity, duration: 7}} 
-              className='text-[17vw] leading-[11vw] font-["Test_Founders_Grotesk_X-Cond_SmBd"] font-semibold uppercase pt-2 pr-20 mb-[2vw]  '>
+              className='foss text-[17vw] leading-[11vw] font-["Test_Founders_Grotesk_X-Cond_SmBd"] font-semibold uppercase pt-2 pr-20 mb-[2vw]  '>
                 Fossil Watches
              </motion.h1>
 
@@ -16,7 +16,7 @@ function Marquee() {
               initial={{x: 0}} 
               animate={{x: "-100%"}}
               transition={{ease:"linear", repeat: Infinity, duration: 7}} 
-               className='text-[17vw] leading-[11vw] font-["Test_Founders_Grotesk_X-Cond_SmBd"] font-semibold uppercase pt-2 pr-20 mb-[2vw] '>
+               className='foss text-[17vw] leading-[11vw] font-["Test_Founders_Grotesk_X-Cond_SmBd"] font-semibold uppercase pt-2 pr-20 mb-[2vw] '>
                  Fossil Watches
             </motion.h1>
             
