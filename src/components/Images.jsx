@@ -56,7 +56,7 @@ const Images = () => {
       initial={{ x: -500, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1, }}
       transition={{ ease: 'easeInOut', duration: 1 }}
-      className="imagecont absolute left-[8%] top-[34%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-neutral-700"
+      className="imagecont absolute left-[8%] top-[34%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
     >
       <img
         className='h-[86%] w-[100%] object-contain'
@@ -76,7 +76,7 @@ const Images = () => {
           initial={{x:500, opacity:0}}
           whileInView={{x:0, opacity:1}}
           transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[53%] top-[115%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-stone-700"
+      className="imagecont absolute left-[53%] top-[115%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
       
     >
       <img
@@ -100,7 +100,7 @@ const Images = () => {
     >
       <img
         className='h-[86%] w-[100%] object-contain'
-        src={model2}
+        src={model4}
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex sm:flex-row justify-around gap-10'> 
@@ -115,7 +115,7 @@ const Images = () => {
      initial={{x:-500, opacity:0}}
      whileInView={{x:0, opacity:1}}
      transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[8%] top-[200%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-zinc-800"
+      className="imagecont absolute left-[8%] top-[200%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
       
     >
       <img
@@ -159,7 +159,7 @@ const Images = () => {
     >
       <img
         className='h-[86%] w-[100%] object-contain'
-        src={model2}
+        src={model3}
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex sm:flex-row justify-around gap-10'> 
@@ -174,7 +174,7 @@ const Images = () => {
      whileHover={{zoom:1}}
      whileInView={{x:0, opacity:1}}
      transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[53%] top-[285%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-neutral-700 "
+      className="imagecont absolute left-[53%] top-[285%] my-auto w-[70em] h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300 "
      
     >
       <img
@@ -215,7 +215,7 @@ const Images = () => {
           initial={isLargeScreen ? { x: -500, opacity: 0 } : { opacity: 1 }}
           whileInView={{x:0, opacity:1}}
           transition={{ease:'easeInOut', duration:1}}
-      className="imagecont absolute left-[8%] top-[196%] sm:top-[370%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 sm:bg-zinc-800 border-4 sm:border-0 border-orange-300 "
+      className="imagecont absolute left-[8%] top-[196%] sm:top-[370%] my-auto w-[160em] h-[130em] sm:w-[70em] sm:h-[60em] rounded-[5%] overflow-hidden bg-black-700 border-4 border-orange-300"
      
     >
       <img
