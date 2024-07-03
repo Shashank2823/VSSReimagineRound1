@@ -21,7 +21,7 @@ import Marquee from './Marquee';
 
 
 const Images = () => {
-  const isLargeScreen = window.innerWidth >= 640;
+  const isLargeScreen = window.innerWidth >= 1020;
 
   return (
     <><div className='min-w-full min-h-screen relative'>
