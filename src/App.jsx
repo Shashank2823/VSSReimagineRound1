@@ -166,7 +166,7 @@ function App() {
    <div className='w-full h-auto absolute md:bottom-[-750%] bottom-[-650%]'>
      <End/>
     </div> 
-    <div className='w-full h-auto absolute md:bottom-[-800%] bottom-[-710%] '>
+    <div className='w-full h-auto absolute 2xl:bottom-[-820%] md:bottom-[-800%] bottom-[-710%] '>
       <Footer/> 
     </div> 
 </div>

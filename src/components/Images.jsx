@@ -124,8 +124,8 @@ const Images = () => {
         alt="Model in Fossil"
       />
       <div className='h-[15%] w-[100%] flex justify-around gap-10'> 
-          <h5 className='text-slate-300 text-[10em] sm:text-[6rem]  '>Compound X</h5>
-          <h2 className='text-white text-[10em] sm:text-[6rem]  '>$323</h2>
+          <h5 className='spot text-slate-300 text-[10em] sm:text-[6rem]  '>Compound X</h5>
+          <h2 className='spot text-white text-[10em] sm:text-[6rem]  '>$323</h2>
       </div>
     </motion.div>
 
