@@ -30,7 +30,7 @@ const Watch = () => {
 
                             <div class="section_info_col">
                                 <p class='section_info_col_text'>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, nesciunt? Deleniti eligendi asperiores similique consequatur totam numquam temporibus quaerat excepturi.
+                                Discover the timeless elegance and innovative craftsmanship of FOSSIL watches.FOSSIL watches are designed to complement your lifestyle. Explore our selection and find the perfect watch that not only tells time but also tells your story.
                                 </p>
                             </div>
                         </div>
@@ -66,7 +66,7 @@ const Watch = () => {
                         <div className="para">
                             <h1>Less,</h1>
                             <h1>But Better.</h1>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, unde optio delectus pariatur quas maiores est sint, laborum error accusantium totam iste veritatis placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, aliquam!</p>
+                            <p>Craftsmanship You Can Trust. Every FOSSIL watch is crafted with the finest materials, ensuring durability and precision. Experience the perfect balance of tradition and innovation in every timepiece also complements your unique style .</p>
                         </div>
                     </div>
                 </section>
