@@ -29,7 +29,8 @@ html{
 } 
 body{
   font-family: Gilroy;
-  background-color: rgb(19, 19, 18);
+  /* background-color: rgb(19, 19, 18); */
+  background-color: rgb(42, 49, 39);
 
 }
 :root{
@@ -91,7 +92,7 @@ nav div a{
 .bar{
   width: 10vw;
   height: 105vh;
-  background-color:#424242;
+  background-color:rgb(134, 140, 125);
   
 }
 
@@ -379,7 +380,7 @@ p,span{
 
 .section_marquee_items span{
   font-size: 10rem;
-  color: #ee4618;
+  color: rgba(214, 255, 0, 1);
   text-transform: uppercase;
   font-family: assi;
 }
